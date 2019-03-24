@@ -1,0 +1,21 @@
+<div class="animatedParent animateOnce">
+    <div class="slider-container from-right animated fadeInRight">
+        <div class="pull-grab">
+            <div class="pull-grab__long-arrow-left">
+                <img src="assets/img/icons/long-arrow-left.svg" alt="">
+            </div>
+            <div class="pull-grab__hand pull-grab__hand--left">
+                <img src="assets/img/icons/hand.svg" alt="">
+            </div>
+        </div>
+        <div class="slider">
+        {{#ifpage 'labatt'}}
+            {{#each data.labatt-concepts-slider}}
+            <div class="slide">
+                <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+            </div>
+            {{/each}}
+        {{/ifpage}}
+        </div>
+    </div>
+</div>

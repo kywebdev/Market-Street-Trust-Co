@@ -1,0 +1,134 @@
+---
+title: Big Hill Cider Works
+
+client-name: Big Hill Cider Works
+hero-bg: big-hill/big-hill-hero.jpg
+hero-heading: A small brand goes big on design
+marquee-length: 11
+
+creative-xl-bg: big-hill/big-hill-creative-xl-bg.jpg
+bottomline: Need anything applicable here
+honors-awards: <p>Back to back<br /><span class="black-strike">Gold Addys</span></p><ul><li>2016, 2 Golds</li><li>2017, 1 Gold</li></ul>
+creative-director: James Madsen
+assoc-creative-director: Dave Spink
+copywriter: John Gilbert
+
+branding-bg-color: c9d1a8
+branding-label: Branding
+branding-heading: Hand<br />crafted
+
+color-palette-label: Palette
+color-palette-heading: Description of color can go right here
+
+xl-image-divider: big-hill/big-hill-xl-divider.jpg
+xl-image-divider-class: right
+
+slider-class: full-width space-top--100
+
+vimeo-id: 87110435
+video-poster-img: /clients/big-hill/big-hill-video-poster.jpg
+video-watch-link: Watch the film
+
+posters-top-label: Design
+posters-top-heading: Oversize<br />Posters
+posters-img: big-hill/big-hill-posters.png
+posters-img-alt: Big Hill Cider Works posters
+
+next-account: drydene
+---
+
+<div class="section-wrapper">
+    <section class="section" id="section1">
+        {{> interior-hero}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Packing. Logo Design. #DoctorAway</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section2">
+        {{> creative}}
+    </section>
+    <section class="section" id="section3">
+        {{> branding}}
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Creatives</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Branding</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section4">
+        {{> color-palette}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Color</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section5">
+    {{#each data.big-hill-tlir-labels}}
+        {{> text-left-image-right}}
+    {{/each}}
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Label Design</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> xl-image-divider}}
+<div class="section-wrapper">
+    <section class="section" id="section6">
+    {{#each data.big-hill-tlir-artwork}}
+        {{> text-left-image-right}}
+    {{/each}}
+        {{> slider-from-left}}
+    </section>
+    <section class="section" id="section7">
+        {{> video}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section6"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section7">Brand Film</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section8">
+        {{> posters}}
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section8">Posters</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> back-to-top}}
+{{> share-this}}

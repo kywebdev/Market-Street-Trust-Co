@@ -1,0 +1,130 @@
+/*
+
+Styling developed for the Market Street Trust website by the Pavone Digital Team.
+https://www.pavone.net
+
+
+
+FOUNDATION INCLUDES - DO NOT DELETE
+
+*/
+
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+//
+@include foundation-xy-grid-classes;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+// @include foundation-float-classes;
+@include foundation-flex-classes;
+
+// @include foundation-prototype-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+/*
+
+SITE-SPECIFIC PARTIALS
+
+*/
+
+// dependencies
+@import "common/variables";
+@import "autoload/normalize";
+
+// site-wide styling
+@import "common/animations";
+@import "common/global";
+@import "common/mixins";
+
+// layout
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/sections";
+@import "layouts/footer";
+
+// components
+@import "components/brand-ledger";
+@import "components/buttons";
+@import "components/cards";
+@import "components/manifesto";
+@import "components/sliders";
+@import "components/vault";
+@import "components/videos";
+
+// vendor styles
+@import "vendor/prism";
+@import "vendor/slick-theme";
+@import "vendor/slick";
+
+// helpers
+@import "common/helpers";
+
+/*
+
+STYLE GUIDE PARTIALS
+
+PLEASE NOTE: 
+The following partials are intended to contain code used in the style guide ONLY. All HTML templates should display correctly without the use of the styles in these partials.
+
+*/
+
+// code snippet styling
+@import "style-guide/prism";
+
+// style guide layout
+@import "style-guide/header";
+@import "style-guide/intro";
+@import "style-guide/layout";
+@import "style-guide/footer";
+
+// style guide-specific components
+@import "style-guide/colors";
+@import "style-guide/typography";
+@import "style-guide/icon-grid";
+@import "style-guide/slider";
+
+// style guide helpers
+@import "style-guide/helpers";

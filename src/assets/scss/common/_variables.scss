@@ -1,0 +1,77 @@
+// ----------------------  SITE COLORS  ----------------------
+
+$red:           #f73c1c;
+$gold:          #d0af2b;
+$green:         #52604f;
+$light-green:   #c9d1a8;
+$black:         #1a1d1c;
+$gray:          #b5b4ac;
+$tan:           #f8f6f2;
+$white:         #ffffff;
+$error:         $red;
+$success:       $green;
+
+
+// ----------------------  TYPEFACES  ----------------------
+
+// Karla
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+// Knockout HTF-48
+@font-face {
+    font-family: 'Knockout HTF-48';
+    src: url('../fonts/style-guide/Knockout-HTF48-Featherweight.eot');
+    src: url('../fonts/style-guide/Knockout-HTF48-Featherweight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.woff2') format('woff2'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.woff') format('woff'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.ttf') format('truetype'),
+         url('../fonts/style-guide/Knockout-HTF48-Featherweight.svg#Knockout-HTF48-Featherweight') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Chalet, Europa, Refrigerator Deluxe and Work Sans
+@import url("https://use.typekit.net/zsh3zsl.css");
+
+$karla:         'Karla', sans-serif;
+$knockout-48:   'Knockout HTF-48', sans-serif;
+$chalet:        'chalet-london-sixty', sans-serif;
+$europa:        'europa', sans-serif;
+$refrigerator:  'refrigerator-deluxe', sans-serif;
+$work-sans:     'work-sans', sans-serif;
+
+
+// ----------------------  BREAKPOINTS  ----------------------
+
+$x-large:   1600px;
+$large:     1200px;
+$medium:    900px;
+$small:     550px;
+
+
+// ----------------------  STYLE GUIDE VARIABLES  ----------------------
+
+// Set these for each project
+
+$primary-color:         $red;
+$secondary-color:       $gold;
+$tertiary-color:        $green;
+$gray-accent:           $gray;
+$heading-color:         $black;
+$heading-font:          $work-sans;
+$text-color:            $black;
+$text-font:             $chalet;
+
+$color1:                $red;
+$color2:                $gold;
+$color3:                $green;
+$color4:                $light-green;
+$color5:                $black;
+$color6:                $gray;
+$color7:                $tan;
+$color8:                $white;
+
+$typeface1:             $chalet;
+$typeface2:             $europa;
+$typeface3:             $refrigerator;
+$typeface4:             $work-sans;

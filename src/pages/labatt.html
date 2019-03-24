@@ -1,0 +1,79 @@
+---
+title: Labatt Blue
+
+client-name: Labatt Blue
+hero-bg: labatt/labatt-hero.jpg
+hero-heading: Cheers to Hockey
+marquee-length: 8
+
+creative-xl-bg: labatt/labatt-creative-xl-bg.jpg
+bottomline: Need anything applicable here
+honors-awards: <p>National <span class="black-strike">Gold Addy</span><br />4 Philadelphia Regionals</p><ul><li>3 Golds</li><li>Best of Show</li></ul>
+creative-director: James Madsen
+assoc-creative-director: Dave Spink
+copywriter: John Gilbert
+
+large-img-atr-img: labatt/labatt-initial.png
+large-img-atr-label: Concepts
+large-img-atr-heading: Initial<br />Can Designs
+
+xl-image-divider: labatt/labatt-xl-divider.jpg
+
+label-heading-label: Labels
+label-heading-heading: Final<br />Can Designs
+
+next-account: sauders
+---
+
+<div class="section-wrapper">
+    <section class="section" id="section1">
+        {{> interior-hero}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Packaging. Promotion. #CheersToHockey</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section2">
+        {{> creative}}
+    </section>
+    <section class="section" id="section3">
+        <div class="initial-concepts">
+            {{> large-img-absolute-text-right}}
+        </div>
+        {{> slider-from-right}}
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Creative</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Initial Concepts</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> xl-image-divider}}
+<div class="section-wrapper">
+    <section class="section" id="section4">
+        {{> label-with-heading}}
+        {{> slider-from-left}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Final Can Designs</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> back-to-top}}
+{{> share-this}}

@@ -1,0 +1,33 @@
+<div class="color grid-x animatedParent animateOnce">
+    <div class="cell large-8 animated fadeInLeft">
+        <div class="slider-container from-left color-slider">
+            <div class="pull-grab">
+                <div class="pull-grab__hand pull-grab__hand--right">
+                    <img src="assets/img/icons/hand.svg" alt="">
+                </div>
+                <div class="pull-grab__long-arrow-right">
+                    <img src="assets/img/icons/long-arrow-right.svg" alt="">
+                </div>
+            </div>
+            <div class="slider">
+            {{#ifpage 'big-hill'}}
+                {{#each data.big-hill-colors}}
+                <div class="slide {{color-class}}" style="background-color: #{{color-hex}};">
+                    <div class="color__palette-slider__text">
+                        <p class="color__palette-slider__text__color-name label-generic">{{color-name}}</p>
+                        <p class="color__palette-slider__text__cmyk">{{color-cmyk}}</p>
+                        <p class="color__palette-slider__text__hex">#{{color-hex}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            {{/ifpage}}
+            </div>
+        </div>
+    </div>
+    <div class="cell large-4 animated fadeInUpShort delay-750">
+        <div class="color__text">
+            <p class="color__text__label label-generic">{{color-palette-label}}</p>
+            <p class="color__text__heading">{{color-palette-heading}}</p>
+        </div>
+    </div>
+</div>

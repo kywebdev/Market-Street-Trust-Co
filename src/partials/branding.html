@@ -1,0 +1,22 @@
+<div class="animatedParent animateOnce">
+    <div class="branding grid-x grid-margin-x grid-margin-y animated fadeInRight" style="background-color: #{{branding-bg-color}};">
+        <div class="cell large-6 medium-6 animated fadeInUpShort delay-750">
+            <div class="branding__text">
+                <p class="branding__text__label label-generic">{{branding-label}}</p>
+                <p class="branding__text__heading">{{{branding-heading}}}</p>
+                <div class="branding__text__slider-nav"></div>
+            </div>
+        </div>
+        <div class="cell large-6 medium-6 animated fadeInDownShort delay-1000">
+            <div class="branding__slider">
+            {{#ifpage 'big-hill'}}
+                {{#each data.big-hill-branding-slider}}
+                <div class="slide">
+                    <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                </div>
+                {{/each}}
+            {{/ifpage}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,122 @@
+.home-hero {
+    width: 91%;
+    position: relative;
+
+    @media screen and (max-width: $medium) {
+        width: 100%;
+    }
+    @media screen and (max-width: $small) {
+        height: 350px;
+        background-image: url('../img/homepage-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__hero-img {
+        width: 100%;
+        display: block;
+        pointer-events: none;
+        user-select: none;
+
+        @media screen and (max-width: $small) {
+            display: none;
+        }
+    }
+    &__hero-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        width: 90%;
+        max-width: 900px;
+
+        @media screen and (max-width: $medium) {
+            z-index: 2;
+        }
+        &__text {
+            color: $white;
+            font-size: 60px;
+            line-height: 90px;
+            margin-bottom: 100px;
+
+            @media screen and (max-width: ($medium + 200)) {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: ($small + 150)) {
+                font-size: 28px;
+                line-height: 38px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.interior-hero {
+    width: 91%;
+    position: relative;
+
+    @media screen and (max-width: $medium) {
+        width: 100%;
+    }
+    &__hero-img {
+        width: 100%;
+        display: block;
+        pointer-events: none;
+        user-select: none;
+
+        @media screen and (max-width: $small) {
+            min-height: 350px;
+        }
+    }
+    &__hero-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        width: 100%;
+
+        @media screen and (max-width: $medium) {
+            z-index: 2;
+        }
+        &__label {
+            color: $white;
+            width: 90%;
+            max-width: 900px;
+            margin: 0px auto 30px;
+        }
+        &__text {
+            font-family: $chalet;
+            color: $white;
+            font-size: 60px;
+            line-height: 90px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 1100px) {
+                height: 175px;
+            }
+            @media screen and (max-width: 700px) {
+                height: 95px;
+            }
+            .marquee-container__marquee-type {
+                @media screen and (max-width: 1100px) {
+                    font-size: 130px;
+                    letter-spacing: 10px;
+                    margin-top: 50px;
+                }
+                @media screen and (max-width: 700px) {
+                    font-size: 80px;
+                    letter-spacing: 6px;
+                    margin-top: 0px;
+                }
+            }
+        }
+        &__scroll {
+            width: 90%;
+            max-width: 900px;
+            margin: 0px auto;
+        }
+    }
+}

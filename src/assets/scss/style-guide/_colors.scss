@@ -1,0 +1,86 @@
+.color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.color-swatches__color-swatch {
+    width: calc((100% / 4) - 3%) !important;
+    margin-left: 0px !important;
+    margin-right: 4% !important;
+    height: 200px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    opacity: 1;
+    transition: .3s ease-in-out;
+
+    &:nth-of-type(4n) {
+        margin-right: 0% !important;
+    }
+    &:hover {
+        opacity: .8;
+        top: -10px;
+    }
+    @media screen and (max-width: $medium) {
+        width: calc((100% / 2) - 2.5%) !important;
+        height: 150px;
+        margin: 0px 5% 30px 0px !important;
+
+        &:nth-of-type(3n) {
+            margin-right: 5% !important;
+        }
+        &:nth-of-type(2n) {
+            margin-right: 0% !important;
+        }
+    }
+    @media screen and (max-width: $small) {
+        width: 100% !important;
+        height: 65px;
+        margin-right: 0% !important;
+        margin-bottom: 20px !important;
+    }
+}
+.color-swatches__color-swatch--color1 {
+    background-color: $color1;
+}
+.color-swatches__color-swatch--color2 {
+    background-color: $color2;
+}
+.color-swatches__color-swatch--color3 {
+    background-color: $color3;
+}
+.color-swatches__color-swatch--color4 {
+    background-color: $color4;
+}
+.color-swatches__color-swatch--color5 {
+    background-color: $color5;
+}
+.color-swatches__color-swatch--color6 {
+    background-color: $color6;
+}
+.color-swatches__color-swatch--color7 {
+    background-color: $color7;
+}
+.color-swatches__color-swatch--color8 {
+    background-color: $color8;
+}
+.color-swatches__color-swatch--border {
+    border: 1px solid black;
+}
+.color-swatches__color-swatch__variable-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #fafafa;
+    border: 1px solid #e2e2e2;
+    padding: 5px;
+}
+.color-swatches__color-swatch__sass-variable-name {
+    color: #393939;
+    margin: 0px;
+    text-align: center;
+    line-height: inherit;
+}

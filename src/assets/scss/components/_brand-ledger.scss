@@ -1,0 +1,125 @@
+.brand-ledger {
+    .cell {
+        &.large-4 {
+            position: relative;
+
+            &:before {
+                display: block;
+                content: '';
+                width: 40%;
+                height: 14px;
+                background-color: $red;
+                position: absolute;
+                bottom: -11px;
+                right: 0px;
+                z-index: -1;
+            }
+        }
+    }
+    h2 {
+        @media screen and (max-width: $medium) {
+            font-size: 38px;
+            line-height: 48px;
+        }
+    }
+    &-accounts {
+        border-top: 2px solid $black;
+        border-bottom: 2px solid $black;
+        margin-left: 9%;
+        width: 91%;
+        margin-bottom: 80px;
+
+        @media screen and (max-width: $medium) {
+            margin-left: 5%;
+            width: 95%;
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: $small) {
+            margin-bottom: 30px;
+        }
+        &__record {
+            font-family: $europa;
+            margin: 0px;
+            position: relative;
+            padding: 20px 30px 20px 0px;
+            line-height: 24px;
+
+            @media screen and (max-width: $medium) {
+                text-align: center;
+                padding: 20px 30px 0px 0px;
+                line-height: 28px;
+            }
+            &:before {
+                display: block;
+                content: '';
+                width: 2px;
+                height: 150%;
+                background-color: $black;
+                position: absolute;
+                top: -25%;
+                right: -10px;
+
+                @media screen and (max-width: $medium) {
+                    display: none;
+                }
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 2px;
+                height: 150%;
+                background-color: $black;
+                position: absolute;
+                top: -25%;
+                right: 10px;
+
+                @media screen and (max-width: $medium) {
+                    display: none;
+                }
+            }
+            .mktst {
+                font-family: $refrigerator;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+        &__division {
+            font-family: $europa;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 0px;
+            text-align: center;
+            position: relative;
+            padding: 20px 30px;
+            line-height: 24px;
+
+            .pmg {
+                font-family: $refrigerator;
+                font-size: 21px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-left: 5px;
+            }
+        }
+    }
+    &-logos {
+        &__brand {
+            img {
+                width: 100%;
+                max-width: 200px;
+                margin: 0px auto;
+                display: block;
+                position: relative;
+                top: 0px;
+                transition: .4s ease-out;
+                transform: scale(1);
+    
+                &:hover {
+                    top: -10px;
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}

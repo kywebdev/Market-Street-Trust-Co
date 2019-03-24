@@ -1,0 +1,138 @@
+brand-ledger:
+  -
+    brand-name: Labatt
+    brand-img: labatt.png
+  -
+    brand-name: Drydene
+    brand-img: drydene.png
+  -
+    brand-name: Starkist
+    brand-img: starkist.png
+  -
+    brand-name: Seagram's
+    brand-img: seagrams.png
+  -
+    brand-name: Ever Grain
+    brand-img: evergrain.png
+  -
+    brand-name: Bella Portofino
+    brand-img: portofino.png
+  -
+    brand-name: Vesper
+    brand-img: vesper.png
+  -
+    brand-name: Sun-Maid
+    brand-img: sunmaid.png
+  -
+    brand-name: Blue Harbor
+    brand-img: blueharbor.png
+  -
+    brand-name: Big Hill Cider Works
+    brand-img: bighill.png
+  -
+    brand-name: Turkey Hill
+    brand-img: turkeyhill.png
+  -
+    brand-name: Sauder's Eggs
+    brand-img: sauders.png
+
+labatt-concepts-slider:
+  -
+    slide-img: labatt/labatt-initial-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: labatt/labatt-initial-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: labatt/labatt-initial-slide3.png
+    alt-text: Slide 3
+  -
+    slide-img: labatt/labatt-initial-slide4.png
+    alt-text: Slide 4
+
+labatt-final-slider:
+  -
+    slide-img: labatt/labatt-final-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: labatt/labatt-final-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: labatt/labatt-final-slide3.png
+    alt-text: Slide 3
+  -
+    slide-img: labatt/labatt-final-slide4.png
+    alt-text: Slide 4
+
+all-together-slider:
+  -
+    slide-img: all-together/all-together-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: all-together/all-together-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: all-together/all-together-slide3.png
+    alt-text: Slide 3
+
+big-hill-branding-slider:
+  -
+    slide-img: big-hill/big-hill-branding-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: big-hill/big-hill-branding-slide1.png
+    alt-text: Slide 2
+  -
+    slide-img: big-hill/big-hill-branding-slide1.png
+    alt-text: Slide 3
+
+big-hill-colors: 
+  -
+    color-name: White
+    color-hex: ffffff
+    color-cmyk: c01 m01 y01 k01
+    color-class: color__palette-slider--light
+  -
+    color-name: Pale Green
+    color-hex: e9e3ca
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Red
+    color-hex: 8d0b19
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Brown
+    color-hex: 362b22
+    color-cmyk: c01 m01 y01 k01
+
+big-hill-tlir-labels:
+  -
+    tlir-leftside-grid-size: 3
+    tlir-rightside-grid-size: 9
+    tlir-label: Packaging
+    tlir-heading: Label<br />designs
+    tlir-img: big-hill/big-hill-labels.png
+    tlir-alt: Cider bottle label designs
+
+big-hill-tlir-artwork:
+  -
+    tlir-leftside-grid-size: 5
+    tlir-rightside-grid-size: 7
+    tlir-label: Hand Crafted
+    tlir-heading: Illustration<br />& Artwork
+    tlir-img: big-hill/big-hill-illustration.jpg
+    tlir-alt: Big Hill Summer Scrumpy Illustration
+
+big-hill-slider:
+  -
+    slide-img: big-hill/big-hill-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: big-hill/big-hill-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: big-hill/big-hill-slide3.jpg
+    alt-text: Slide 3
+  -
+    slide-img: big-hill/big-hill-slide2.jpg
+    alt-text: Slide 2

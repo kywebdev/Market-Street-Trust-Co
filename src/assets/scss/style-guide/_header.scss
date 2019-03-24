@@ -1,0 +1,194 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.menu-is-open {
+        .style-guide-sidebar {
+            transform: translateX(0);
+        }
+        .style-guide-main-content {
+            width: calc(100% - 350px);
+            left: 350px;
+
+            @media screen and (max-width: $medium) {
+                width: 100%;
+                left: 0px;
+            }
+        }
+        .sg-menu {
+            transform: translateX(250px);
+
+            &:hover {
+                .sg-menu__hamburger-line {
+                    background-color: $gray-accent;
+
+                    &:nth-child(3) {
+                        top: 13px;
+                    }
+                }
+            }
+        }
+        .sg-header {
+            transform: translateY(-91px);
+        }
+        .sg-menu__hamburger-line {
+            &:nth-child(1) {
+                top: 18px;
+                width: 0;
+                left: 50%;
+            }
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                top: 13px;
+            }
+        }
+    }
+}
+.style-guide-sidebar {
+    width: 100%;
+    max-width: 349px;
+    position: fixed;
+    z-index: 3;
+    background-color: #f8f8f8;
+    border-right: 1px solid #dcdcdc;
+    height: 100%;
+    overflow: auto;
+    transform: translateX(-350px);
+    transition: .5s ease-in-out;
+
+    a {
+        &:hover, &:active, &:focus {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+.sg-top-link {
+    display: inline;
+    margin: 17px 30px;
+
+    &:after {
+        display: none;
+    }
+}
+.sg-logo {
+    max-width: 170px;
+    max-height: 100px;
+    display: block;
+}
+.style-guide-main-content {
+    width: 100%;
+    left: 0px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+.sg-header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    z-index: 2;
+    transform: translateY(-91px);
+    transition: transform .5s ease-in-out;
+
+    &.is-scrolled {
+        border-bottom: 1px solid #dcdcdc;
+        background-color: white;
+        transform: translateY(0px);
+        transition: transform .5s ease-in-out;
+    }
+    &.not-scrolled {
+        border-bottom: 1px solid #dcdcdc;
+        background-color: white;
+        transform: translateY(-91px);
+        transition: transform .5s ease-in-out;
+    }
+}
+.sg-menu {
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 4;
+    transform: translateX(0px);
+    transition: .5s ease-in-out;
+
+    &:hover {
+        .sg-menu__hamburger-line {
+            &:nth-child(1) {
+                top: -3px;
+            }
+            &:nth-child(3) {
+                top: 27px;
+            }
+        }
+        &:before {
+            display: none;
+        }
+    }
+    &:before, &:after {
+        display: none;
+    }
+}
+.sg-menu__hamburger-line {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    position: absolute;
+
+    &:last-of-type {
+        margin-bottom: 0px;
+    }
+    &:nth-child(1) {
+        top: 0;
+    }
+    &:nth-child(2) {
+        top: 12px;
+    }
+    &:nth-child(3) {
+        top: 24px;
+    }
+}
+.sg-nav__nav-item {
+    list-style-type: none;
+    display: block;
+    border-top: 1px solid #dcdcdc;
+    font-family: $text-font;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: inherit;
+    transition: .2s ease-in-out;
+
+    &:before {
+        display: none;
+    }
+    &:last-of-type {
+        border-bottom: 1px solid #dcdcdc;
+    }
+    &:hover {
+        background-color: #e8e8e8;
+    }
+    &.is-active {
+        border-left: 7px solid $primary-color;
+        background-color: white;
+    }
+    a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 20px 30px;
+        transition: .5s ease-in-out;
+
+        &:before {
+            display: none;
+        }
+    }
+}

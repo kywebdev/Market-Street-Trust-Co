@@ -1,0 +1,23 @@
+.sg-footer {
+    width: 100%;
+    background-color: black;
+    padding: 30px;
+
+    @media screen and (max-width: $small) {
+        padding: 20px;
+    }
+}
+.sg-footer__footer-notice {
+    color: white;
+    text-align: center;
+    margin: 0px;
+    font-size: 18px;
+}
+.footer-notice__agency-link {
+    color: white;
+
+    &:after {
+        background-color: $white;
+        top: 22px;
+    }
+}

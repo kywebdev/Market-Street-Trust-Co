@@ -1,0 +1,290 @@
+.manifesto {
+    margin: 150px 0px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @media screen and (max-width: $medium) {
+        margin: 150px 0px 70px;
+    }
+    @media screen and (max-width: $small) {
+        margin: 150px 0px 50px;
+    }
+    &__reveal {
+        &--red {
+            width: 0%;
+            height: 100%;
+            background-color: $red;
+            margin: 0px;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+        }
+        &--black {
+            width: 100%;
+            background-color: $black;
+            padding: 100px;
+            margin: 0px;
+            transform: translate(0%);
+            opacity: 0;
+
+            @media screen and (max-width: $medium) {
+                flex-direction: column-reverse;
+                padding: 60px;
+            }
+            @media screen and (max-width: $small) {
+                padding: 50px 5%;
+            }
+        }
+        &__our-manifesto {
+            color: $white;
+            margin-bottom: 70px;
+            position: relative;
+            display: inline-block;
+            
+            @media screen and (max-width: $medium) {
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: $small) {
+                margin-bottom: 40px;
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $black;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                box-shadow: 30px 0px 30px $black;
+            }
+        }
+        &__heading {
+            color: $white;
+            font-family: $work-sans;
+            font-size: 60px;
+            line-height: 80px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 0px;
+            position: relative;
+            display: block;
+            
+            @media screen and (max-width: $medium) {
+                font-size: 40px;
+                line-height: 60px;
+            }
+            @media screen and (max-width: $small) {
+                font-size: 36px;
+                line-height: 56px;
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $black;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                box-shadow: 30px 0px 30px $black;
+            }
+        }
+        &__underlined-text {
+            color: $white;
+            font-family: $work-sans;
+            font-size: 60px;
+            line-height: 80px;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 70px;
+            position: relative;
+            display: block;
+            
+            @media screen and (max-width: $medium) {
+                font-size: 40px;
+                line-height: 60px;
+                margin-bottom: 50px;
+            }
+            @media screen and (max-width: $small) {
+                font-size: 36px;
+                line-height: 56px;
+                margin-bottom: 40px;
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $black;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                box-shadow: 30px 0px 30px $black;
+            }
+            .underline {
+                display: inline-block;
+
+                &:after {
+                    display: block;
+                    content: '';
+                    width: 100%;
+                    height: 3px;
+                    background-color: $white;
+                    position: relative;
+                    bottom: 8px;
+                }
+            }
+        }
+        &__text {
+            color: $white;
+            font-family: $chalet;
+            line-height: 50px;
+            width: 100%;
+            max-width: 700px;
+            position: relative;
+            display: block;
+            margin-bottom: 0px;
+            
+            @media screen and (max-width: $medium) {
+                line-height: 45px;
+            }
+            @media screen and (max-width: $small) {
+                line-height: 40px;
+            }
+            &:after {
+                display: block;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: $black;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                box-shadow: 30px 0px 30px $black;
+            }
+        }
+    }
+    .scroll-btn {
+        &__mouse {
+            opacity: 0;
+            position: relative;
+            bottom: -30px;
+        }
+        &__text {
+            opacity: 0;
+            position: relative;
+            right: -30px;
+        }
+    }
+    &.go {
+        .manifesto__reveal--red {
+            animation: manifesto-reveal-red 2s cubic-bezier(.58,.09,.06,.98);
+        }
+        .manifesto__reveal--black {
+            animation: manifesto-reveal-black 2.5s cubic-bezier(.58,.09,.06,.98);
+            animation-delay: -.5s;
+            animation-fill-mode: forwards;
+        }
+        .scroll-btn {
+            &__mouse {
+                animation: manifesto-mouse 1s ease-in-out;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+            &__text {
+                animation: manifesto-scroll 1s ease-in-out;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .manifesto__reveal__our-manifesto {
+            &:after {
+                animation: manifesto-reveal-text .5s ease-in-out;
+                animation-delay: 1.6s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .manifesto__reveal__heading {
+            &:after {
+                animation: manifesto-reveal-text .5s ease-in-out;
+                animation-delay: 1.8s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .manifesto__reveal__underlined-text {
+            &:after {
+                animation: manifesto-reveal-text .5s ease-in-out;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+            }
+        }
+        .manifesto__reveal__text {
+            &:after {
+                animation: manifesto-reveal-text .5s ease-in-out;
+                animation-delay: 2.2s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+@keyframes manifesto-reveal-red {
+    0% {
+        width: 0%;
+        right: 0%;
+    }
+    10% {
+        right: 0%;
+    }
+    80% {
+        width: 30%;
+    }
+    100% {
+        width: 0%;
+        right: 100%;
+    }
+}
+@keyframes manifesto-reveal-black {
+    0% {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    25% {
+        transform: translate(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0%);
+        opacity: 1;
+    }
+}
+@keyframes manifesto-mouse {
+    0% {
+        opacity: 0;
+        bottom: -30px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0px;
+    }
+}
+@keyframes manifesto-scroll {
+    0% {
+        opacity: 0;
+        right: -30px;
+    }
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+@keyframes manifesto-reveal-text {
+    0% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}

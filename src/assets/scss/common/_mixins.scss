@@ -1,0 +1,28 @@
+// 1-1 ratio
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+
+        @media screen and (max-width: $small) {
+            padding-top: 350px;
+        }
+    }
+    > .content {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        width: 82%;
+        height: 100%;
+        margin-left: 9%;
+
+        @media screen and (max-width: $medium) {
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+}

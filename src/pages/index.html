@@ -1,0 +1,55 @@
+---
+title: Home
+
+vimeo-id: 87110435
+video-class: homepage-video
+video-poster-img: homepage-video-poster.png
+video-poster-initials: BHC
+video-label: Packaging — Logo Design
+video-heading: Big Hill Cider Works
+video-watch-link: Watch the film
+---
+
+<div class="section-wrapper">
+    <section class="section" id="section1">
+        {{> homepage-hero}}
+    </section>
+    <section class="section" id="section2">
+        {{> featured-work}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Dept. of Design &amp; Commerce</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Featured Work</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Manifesto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section4">Brand Ledger</a>
+            </li>
+        </ul>
+    </div>
+    <section class="section animatedParent animateOnce" id="section3">
+        {{> manifesto}}
+    </section>
+    <section class="section brand-ledger animatedParent animateOnce" id="section4">
+        <div class="animated fadeInUp">
+            {{> brand-ledger-accounts}}
+            {{> brand-ledger-logos}}
+        </div>
+    </section>
+</div>
+{{> back-to-top}}
