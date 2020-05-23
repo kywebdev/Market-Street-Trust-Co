@@ -2,6 +2,7 @@ import Rellax from 'rellax';
 var $ = require('jquery');
 window.jQuery = $;
 window.$ = $;
+import slick from 'slick-carousel';
 var jQueryBridget = require('jquery-bridget');
 var Flickity = require('flickity');
 
@@ -557,7 +558,7 @@ $(document).ready(function() {
     });
 
     // template and wireframe sliders
-    /*$('.sg-templates').slick({
+    $('.sg-templates').slick({
         infinite: true,
         slidesToShow: 3,
         arrows: true,
@@ -576,7 +577,7 @@ $(document).ready(function() {
                 }
             }
         ]
-    });*/
+    });
 
     // click to copy buttons
     new ClipboardJS('.copy-btn');
@@ -814,20 +815,17 @@ $(document).ready(function() {
 
 })(jQuery);
 
-// paraxify
-!function(e,t,i){"use strict";var o;o=function(i,o){var s,n,r,h,f,g,c;return g=0,c=0,r=0,h={},f=[],n=0,s=function(t,i){this.options={speed:1,boost:0};for(r in i)this.options[r]=i[r];if((this.options.speed<0||this.options.speed>1)&&(this.options.speed=1),t||(t="paraxify"),e.getElementsByClassName(t.replace(".","")))this.photos=e.getElementsByClassName(t.replace(".",""));else{if(e.querySelector(t)===!1)throw new Error("The elements you're trying to select don't exist.");this.photos=querySelector(t)}h=this.options,f=this.photos,this._init(this)},s.prototype={update:function(){for(c=t.innerHeight,r=0;r<f.length;)f[r].style.backgroundPosition="center center",f[r].url=t.getComputedStyle(f[r],!1).backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi,"$2").split(",")[0],f[r].img||(f[r].img=new Image),f[r].url!==f[r].img.src&&(this._check(r),f[r].img.src=f[r].url),r++;this._animate()},_init:function(){this.update(),t.onscroll=function(){this._animate()}.bind(this),t.onresize=function(){this.update()}.bind(this)},_check:function(e){var i,o;o=f[e],o.ok=!0,o.bgSize=t.getComputedStyle(o,!1).backgroundSize,i=c,f[e].img.onload=function(){if(""===o.bgSize||"auto"===o.bgSize){if(this.height<o.offsetHeight)throw o.ok=!1,new Error("The image "+o.url+" ("+this.height+"px) is too short for that container ("+o.offsetHeight+"px).");i=this.height,this.height<c&&(i+=(c-o.offsetHeight)*h.speed)}else if("cover"===o.bgSize){if(c<o.offsetHeight)throw o.ok=!1,new Error("The container ("+o.offsetHeight+"px) can't be bigger than the image ("+c+"px).")}else"cover"===t.getComputedStyle(o,!1).backgroundSize,this._check(e);o.diff=-(i-o.offsetHeight)*h.speed,o.diff=o.diff-o.offsetHeight*h.boost}},_visible:function(e){return g+c>f[e].offsetTop&&g<f[e].offsetTop+f[e].offsetHeight?!0:!1},_animate:function(){var i,o;for(g=void 0!==t.pageYOffset?t.pageYOffset:(e.documentElement||e.body.parentNode||e.body).scrollTop,r=0;r<f.length;)this._check(r),f[r].ok&&"fixed"===t.getComputedStyle(f[r],!1).backgroundAttachment&&this._visible(r)?(i=(g-f[r].offsetTop+c)/(f[r].offsetHeight+c),o=f[r].diff*(i-.5),"cover"!==f[r].bgSize&&(o+=(c-f[r].img.height)/2),o=Math.round(100*o)/100):o="center",f[r].style.backgroundPosition="center "+o+"px",r++}},new s(i,o)},t.paraxify=o}(document,window,0);
-
 
 
 $(document).ready(function() {
 
     // scrollspy
     $('.section').on('scrollSpy:enter', function() {
-    	console.log('enter:', $(this).attr('id'));
+    	//console.log('enter:', $(this).attr('id'));
     });
 
     $('.section').on('scrollSpy:exit', function() {
-    	console.log('exit:', $(this).attr('id'));
+    	//console.log('exit:', $(this).attr('id'));
     });
 
     $('.section').scrollSpy();
@@ -910,19 +908,19 @@ $(document).ready(function() {
     });
 
     // arrow cursor (nav)
-    $('.vault__nav__nav-item__link').on('mousemove', function(e){
+    $('.vault__nav__nav-item a').on('mousemove', function(e){
 		$('#arrow-cursor').css({
 			left:  e.pageX - 127 + 'px',
 			top:   e.pageY - 85 + 'px',
             pointerEvents: 'none'
 		});
     });
-    $('.vault__nav__nav-item__link').mouseleave(function() {
+    $('.vault__nav__nav-item a').mouseleave(function() {
 		$('#arrow-cursor').css({
 			display: 'none'
 		});
     });
-    $('.vault__nav__nav-item__link').mouseenter(function() {
+    $('.vault__nav__nav-item a').mouseenter(function() {
 		$('#arrow-cursor').css({
 			display: 'block'
 		});
@@ -957,6 +955,20 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    // remove over class on vault menu click to prevent double animations
+    $('.vault-toggle').on('click', function(e) {
+        $(this).removeClass('over');
+    });
+
+    $('.open-vault').on('click', function(e) {
+        e.preventDefault();
+        $('.vault').toggleClass('is-open');
+        $('.vault').addClass('is-changing');
+        setTimeout(function() {
+            $('.vault').removeClass('is-changing');
+        }, 1000);
+    });
+
     // move the social icons into the vault
     function moveSocialToVault(width) {
         if (width <= 535) {
@@ -971,7 +983,7 @@ $(document).ready(function() {
     });
     
     // scroll the page to the next section when the scroll button is clicked (doing it this way so it doesn't interfere with the scrollspy script)
-    $('#section1 .scroll-btn').on('click', function(e) {
+    $('#section1 .scroll-btn, #layout0-section0 .scroll-btn').on('click', function(e) {
         e.preventDefault();
 
         var $nextSection = $('#project-card-rollover');
@@ -991,10 +1003,10 @@ $(document).ready(function() {
     });
     
     // if an iframe is on the page
-    if($('iframe').length) {
+    if($('.video iframe').length) {
 
         // make a new Vimeo player
-        var iframe = document.querySelector('iframe');
+        var iframe = document.querySelector('.video iframe');
         var player = new Vimeo.Player(iframe);
 
         // hide the video poster on click and play the video
@@ -1019,7 +1031,9 @@ $(document).ready(function() {
     }
 
     // rellax parallax scrolling
-    var rellax = new Rellax('.rellax');
+    if ($('.rellax').length) {
+        var rellax = new Rellax('.rellax',);
+    }
 
     // adds class to enable footer animations
     $.fn.visible = function(partial) {
@@ -1083,25 +1097,15 @@ $(document).ready(function() {
     // move flickity buttons beneath branding text
     $('.branding__slider .flickity-prev-next-button').prependTo('.branding__text__slider-nav');
 
-    // social sharing
-    $('.share-fb').click(function(e) {
-        e.preventDefault();
-        var contentPath = window.location;
-        shareURL = 'https://www.facebook.com/sharer/sharer.php?m2w&s=100&p[url]='+contentPath;
-        window.open(shareURL, '_blank', 'height=350,width=550');
-    });
-    $('.share-tw').click(function(e) {
-        e.preventDefault();
-        var contentPath = window.location;
-        shareURL = 'http://twitter.com/share?url='+contentPath;
-        window.open(shareURL, '_blank', 'height=350,width=550');
+    // touch hover effects
+    $('.hover').bind('touchstart touchend', function(e) {
+        $(this).toggleClass('hover-effect');
     });
 
-    // parallax background images
-    var myParaxify = paraxify('selector', {
-        speed: 1,
-        boost: 0
-    });
-    myParaxify = paraxify('.paraxify');
+    // hide oversize cursor if on a touch device
+    if ('ontouchstart' in document.documentElement) {
+        $('#play-cursor').addClass('hidden');
+        $('#arrow-cursor').addClass('hidden');
+    }
 
 });

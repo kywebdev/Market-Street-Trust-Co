@@ -25,7 +25,7 @@ xl-image-divider-class: right
 
 slider-class: full-width space-top--100
 
-vimeo-id: 87110435
+vimeo-id: 320579283
 video-poster-img: /clients/big-hill/big-hill-video-poster.jpg
 video-watch-link: Watch the film
 
@@ -88,47 +88,51 @@ next-account: drydene
         {{> text-left-image-right}}
     {{/each}}
     </section>
-    <div class="sidebar sidebar--left">
-        <ul class="nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#section5">Label Design</a>
-            </li>
-        </ul>
-    </div>
-</div>
-{{> xl-image-divider}}
-<div class="section-wrapper">
     <section class="section" id="section6">
+        {{> xl-image-divider}}
+    </section>
+    <section class="section" id="section7">
     {{#each data.big-hill-tlir-artwork}}
         {{> text-left-image-right}}
     {{/each}}
         {{> slider-from-left}}
     </section>
-    <section class="section" id="section7">
-        {{> video}}
-    </section>
-    <div class="sidebar sidebar--right">
+    <div class="sidebar sidebar--left">
         <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Label Design</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#section6"></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#section7">Brand Film</a>
+                <a class="nav-link" href="#section7"></a>
             </li>
         </ul>
     </div>
 </div>
 <div class="section-wrapper">
     <section class="section" id="section8">
+        {{> video}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section8">Brand Film</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section9">
         {{> posters}}
     </section>
     <div class="sidebar sidebar--left">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="#section8">Posters</a>
+                <a class="nav-link" href="#section9">Posters</a>
             </li>
         </ul>
     </div>
 </div>
-{{> back-to-top}}
-{{> share-this}}
+{{> pre-footer}}

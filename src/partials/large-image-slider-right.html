@@ -1,0 +1,51 @@
+<div class="grid-x grid-margin-x large-image-slider right {{lisr-class}}">
+    <div class="cell large-{{lisr-cell-1}} large-image-slider__text">
+        <div class="animatedParent animateOnce">
+            <div class="label-with-heading animated fadeInUp">
+                <p class="label-with-heading__label label-generic">{{lisr-label}}</p>
+                <p class="label-with-heading__heading">{{{lisr-heading}}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="cell large-{{lisr-cell-2}} large-image-slider__slider">
+        <div class="animatedParent animateOnce">
+            <div class="slider-container from-right animated fadeInRight">
+                <div class="pull-grab">
+                    <div class="pull-grab__long-arrow-left">
+                        <img src="assets/img/icons/long-arrow-left.svg" alt="">
+                    </div>
+                    <div class="pull-grab__hand pull-grab__hand--left">
+                        <img src="assets/img/icons/hand.svg" alt="">
+                    </div>
+                </div>
+                {{#ifpage 'drydene'}}
+                <div class="slider">
+                    {{#each data.drydene-nascar-slider}}
+                    <div class="slide">
+                        <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                    </div>
+                    {{/each}}
+                </div>
+                {{/ifpage}}
+                {{#ifpage 'evergrain'}}
+                <div class="slider">
+                    {{#each data.evergrain-slider}}
+                    <div class="slide">
+                        <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                    </div>
+                    {{/each}}
+                </div>
+                {{/ifpage}}
+                {{#ifpage 'portofino'}}
+                <div class="slider">
+                    {{#each data.portofino-photo-slider}}
+                    <div class="slide">
+                        <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                    </div>
+                    {{/each}}
+                </div>
+                {{/ifpage}}
+            </div>
+        </div>
+    </div>
+</div>

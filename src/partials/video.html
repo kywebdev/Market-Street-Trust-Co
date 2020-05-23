@@ -1,7 +1,8 @@
 <div class="video {{video-class}}">
     <div class="content">
-        <iframe src="https://player.vimeo.com/video/{{vimeo-id}}" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay"></iframe>
-        <div class="video-poster" style="background-image: url('assets/img/{{video-poster-img}}');">
+        <iframe src="https://player.vimeo.com/video/{{vimeo-id}}" allowfullscreen allow="autoplay"></iframe>
+        <div class="video-poster">
+            <img src="assets/img/{{video-poster-img}}" alt="" class="video-poster__img" />
             <p class="video-poster__initials initial-accent">{{video-poster-initials}}</p>
             <div class="video-poster__video-info">
                 <p class="video-info__video-intro section-label">{{video-label}}</p>

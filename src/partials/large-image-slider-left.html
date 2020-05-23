@@ -1,0 +1,42 @@
+<div class="grid-x grid-margin-x large-image-slider left {{lisl-class}}">
+    <div class="cell large-{{lisl-cell-1}} large-image-slider__slider">
+        <div class="animatedParent animateOnce">
+            <div class="slider-container from-left animated fadeInLeft">
+                <div class="pull-grab">
+                    <div class="pull-grab__hand pull-grab__hand--right">
+                        <img src="assets/img/icons/hand.svg" alt="">
+                    </div>
+                    <div class="pull-grab__long-arrow-right">
+                        <img src="assets/img/icons/long-arrow-right.svg" alt="">
+                    </div>
+                </div>
+                {{#ifpage 'seagrams'}}
+                <div class="slider">
+                    {{#each data.seagrams-packaging-slider}}
+                    <div class="slide">
+                        <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                    </div>
+                    {{/each}}
+                </div>
+                {{/ifpage}}
+                {{#ifpage 'portofino'}}
+                <div class="slider">
+                    {{#each data.portofino-slider}}
+                    <div class="slide">
+                        <img src="assets/img/clients/{{slide-img}}" alt="{{alt-text}}" />
+                    </div>
+                    {{/each}}
+                </div>
+                {{/ifpage}}
+            </div>
+        </div>
+    </div>
+    <div class="cell large-{{lisl-cell-2}} large-image-slider__text">
+        <div class="animatedParent animateOnce">
+            <div class="label-with-heading animated fadeInUp">
+                <p class="label-with-heading__label label-generic">{{lisl-label}}</p>
+                <p class="label-with-heading__heading">{{{lisl-heading}}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -8,7 +8,7 @@ body {
     background-color: $tan;
 }
 .browserupgrade {
-    background-color: black;
+    background-color: $black;
     width: 100%;
     padding: 20px;
     z-index: 100;
@@ -19,7 +19,7 @@ body {
     top: 0px;
 
     a {
-        color: #fcd707;
+        color: $gold;
     }
 }
 ::selection {
@@ -331,6 +331,9 @@ section {
     width: 100%;
     position: relative;
 }
+#section2 {
+    position: relative;
+}
 .sidebar {
     width: 9%;
     z-index: 1;
@@ -416,11 +419,32 @@ section {
     width: 91%;
 }
 .sidebar-margins {
-    width: 82%;
-    margin-left: 9%;
+    width: 82% !important;
+    margin-left: 9% !important;
 
     @media screen and (max-width: $medium) {
         width: 90%;
         margin-left: 5%;
+    }
+}
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;        
+}
+
+// WordPress styling overrides
+.ab-item {
+    &:before {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+    &:hover, &:active, &:focus {
+        &:before {
+            background-color: transparent;
+        }
     }
 }

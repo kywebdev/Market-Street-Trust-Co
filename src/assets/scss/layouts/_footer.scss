@@ -137,6 +137,7 @@ footer {
                 max-width: 100px;
                 margin: 0px auto;
                 display: block;
+                pointer-events: none;
             }
         }
     }
@@ -212,6 +213,10 @@ footer {
 
             &__trust-co {
                 transform: scale(1) translate(-50%, -50%);
+
+                &-img {
+                    pointer-events: none;
+                }
             }
             &__top-layer {
                 &__dept {

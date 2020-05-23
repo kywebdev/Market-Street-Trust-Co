@@ -10,6 +10,25 @@
 .full-width {
     width: 100%;
 }
-.space-top--100 {
-    margin-top: 100px;
+.space-top {
+    &--0 {
+        margin-top: 0px;
+    }
+    &--50 {
+        margin-top: 50px;
+    }
+    &--100 {
+        margin-top: 100px;
+    }
+}
+.space-bottom {
+    &--0 {
+        margin-bottom: 0px;
+    }
+    &--50 {
+        margin-bottom: 50px;
+    }
+    &--100 {
+        margin-bottom: 100px;
+    }
 }

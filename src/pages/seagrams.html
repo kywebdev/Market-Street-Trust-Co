@@ -1,0 +1,169 @@
+---
+title: Seagrams
+
+client-name: Seagrams
+hero-bg: seagrams/seagrams-hero.jpg
+hero-heading: A decidedly curious design concoction
+marquee-length: 8
+
+creative-xl-bg: seagrams/seagrams-creative-xl-bg.jpg
+bottomline: Need anything applicable here
+honors-awards: <p>Need <span class="black-strike">anything</span><br />applicable here</p>
+creative-director: James Madsen
+assoc-creative-director: Keith Seaman
+copywriter: John Gilbert
+
+large-img-atr-img: seagrams/seagrams-packaging.png
+large-img-atr-label: Packaging
+large-img-atr-heading: Label<br />designs
+
+tas-cell-1: 3
+tas-cell-2: 9
+tas-label: Product labels
+tas-heading: Single cans<br />& bottles
+
+xl-image-divider: seagrams/seagrams-xl-divider.jpg
+xl-image-divider-class: right
+
+lisl-class: space-top--0
+lisl-cell-1: 8
+lisl-cell-2: 4
+lisl-label: Packaging
+lisl-heading: 6-packs<br />& cases
+
+posters-top-label: Collateral
+posters-top-heading: Oversize<br />Posters
+posters-img: seagrams/seagrams-posters.png
+posters-img-alt: Oversize posters
+
+label-heading-label: Outdoor
+label-heading-heading: Billboards
+
+full-width-image-class: align-right space-bottom--50
+full-width-image: seagrams/seagrams-billboard.jpg
+full-width-image-alt: Outdoor billboards
+
+next-account: all-together
+---
+
+<div class="section-wrapper">
+    <section class="section" id="section1">
+        {{> interior-hero}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#header"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Packaging. Product Launch. Easy Drinkin'</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section2">
+        {{> creative}}
+    </section>
+    <section class="section" id="section3">
+        {{> large-img-absolute-text-right}}
+        {{> text-and-slider}}
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Creatives</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Product Labels</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section4">
+        {{> xl-image-divider}}
+    </section>
+    <section class="section" id="section5">
+        {{> large-image-slider-left}}
+    </section>
+    <section class="section" id="section6">
+        {{> posters}}
+    </section>
+    <div class="sidebar sidebar--right">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section4"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section5">Product Packaging</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section6">Campaign Elements</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-wrapper">
+    <section class="section" id="section7">
+        {{> label-with-heading}}
+        {{> full-width-image}}
+    </section>
+    <section class="section" id="section8">
+        <div class="grid-x grid-margin-x text-and-slider">
+            <div class="cell large-3 text-and-slider__text">
+                <div class="animatedParent animateOnce">
+                    <div class="label-with-heading {{label-with-heading-class}} animated fadeInUp">
+                        <p class="label-with-heading__label label-generic">Bar items</p>
+                        <p class="label-with-heading__heading">Coasters<br />& Table Tent</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell large-9 text-and-slider__slider">
+                <div class="animatedParent animateOnce">
+                    <div class="slider-container from-right animated fadeInRight">
+                        <div class="pull-grab">
+                            <div class="pull-grab__long-arrow-left">
+                                <img src="assets/img/icons/long-arrow-left.svg" alt="">
+                            </div>
+                            <div class="pull-grab__hand pull-grab__hand--left">
+                                <img src="assets/img/icons/hand.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide1.png" alt="Slide 1" />
+                            </div>
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide2.png" alt="Slide 2" />
+                            </div>
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide3.png" alt="Slide 3" />
+                            </div>
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide1.png" alt="Slide 1" />
+                            </div>
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide2.png" alt="Slide 2" />
+                            </div>
+                            <div class="slide">
+                                <img src="assets/img/clients/seagrams/seagrams-bar-slide3.png" alt="Slide 3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar sidebar--left">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#section7">Campaign Elements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section8">On-Prem</a>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> pre-footer}}

@@ -21,6 +21,50 @@
                 </div>
                 {{/each}}
             {{/ifpage}}
+            {{#ifpage 'drydene'}}
+                {{#each data.drydene-colors}}
+                <div class="slide {{color-class}}" style="background-color: #{{color-hex}};">
+                    <div class="color__palette-slider__text">
+                        <p class="color__palette-slider__text__color-name label-generic">{{color-name}}</p>
+                        <p class="color__palette-slider__text__cmyk">{{color-cmyk}}</p>
+                        <p class="color__palette-slider__text__hex">#{{color-hex}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'sauders'}}
+                {{#each data.sauders-colors}}
+                <div class="slide {{color-class}}" style="background-color: #{{color-hex}};">
+                    <div class="color__palette-slider__text">
+                        <p class="color__palette-slider__text__color-name label-generic">{{color-name}}</p>
+                        <p class="color__palette-slider__text__cmyk">{{color-cmyk}}</p>
+                        <p class="color__palette-slider__text__hex">#{{color-hex}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'evergrain'}}
+                {{#each data.evergrain-colors}}
+                <div class="slide {{color-class}}" style="background-color: #{{color-hex}};">
+                    <div class="color__palette-slider__text">
+                        <p class="color__palette-slider__text__color-name label-generic">{{color-name}}</p>
+                        <p class="color__palette-slider__text__cmyk">{{color-cmyk}}</p>
+                        <p class="color__palette-slider__text__hex">#{{color-hex}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            {{/ifpage}}
+            {{#ifpage 'portofino'}}
+                {{#each data.portofino-colors}}
+                <div class="slide {{color-class}}" style="background-color: #{{color-hex}};">
+                    <div class="color__palette-slider__text">
+                        <p class="color__palette-slider__text__color-name label-generic">{{color-name}}</p>
+                        <p class="color__palette-slider__text__cmyk">{{color-cmyk}}</p>
+                        <p class="color__palette-slider__text__hex">#{{color-hex}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            {{/ifpage}}
             </div>
         </div>
     </div>

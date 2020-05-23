@@ -105,20 +105,21 @@
     }
     &-logos {
         &__brand {
+            position: relative;
+            top: 0px;
+            transition: .4s ease-out;
+            transform: scale(1);
+
+            &:hover {
+                top: -10px;
+                transform: scale(1.03);
+            }
             img {
                 width: 100%;
                 max-width: 200px;
                 margin: 0px auto;
                 display: block;
-                position: relative;
-                top: 0px;
-                transition: .4s ease-out;
-                transform: scale(1);
-    
-                &:hover {
-                    top: -10px;
-                    transform: scale(1.03);
-                }
+                pointer-events: none;
             }
         }
     }

@@ -69,6 +69,7 @@ a {
     }
     img {
         width: 100%;
+        pointer-events: none;
     }
 }
 .pull-grab__long-arrow-right {
@@ -80,6 +81,7 @@ a {
 
     img {
         width: 100%;
+        pointer-events: none;
     }
 }
 .pull-grab__long-arrow-left {
@@ -112,6 +114,7 @@ a {
         width: 20px;
         display: inline-block;
         margin-right: 20px;
+        pointer-events: none;
     }
     &__mouse {
         display: inline-block;

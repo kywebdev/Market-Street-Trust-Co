@@ -1,0 +1,161 @@
+.error {
+    background-color: $red;
+
+    .burger-line-1, .burger-line-2, .burger-line-3 {
+        background-color: $black;
+    }
+    .vault-toggle__vault-text {
+        color: $black;
+    }
+    .vault + .header-container header .statement-social__header-social:before {
+        background-color: $white;
+    }
+    .header-social__social-link a:hover {
+        color: $red;
+    }
+    .marquee-wrapper {
+        position: relative;
+        z-index: 2;
+    }
+    main {
+        .marquee-container {
+            color: #ffffff;
+            font-size: 12.5vw;
+            position: absolute;
+            top: -330px;
+            letter-spacing: 15px;
+            z-index: -1;
+            overflow: visible;
+    
+            @media screen and (max-width: $medium) {
+                top: -250px;
+            }
+            @media screen and (max-width: $small) {
+                top: -130px;
+            }
+        }
+    }
+    .marquee-container__marquee-type {
+        @media screen and (max-width: $small) {
+            margin-top: -20px;
+        }
+    }
+    main {
+        position: relative;
+    }
+    &__img {
+        max-width: 600px;
+        margin: -120px auto;
+        position: relative;
+        z-index: 1;
+        pointer-events: none;
+
+        @media screen and (max-width: $small) {
+            margin: -80px auto -120px;
+        }
+    }
+    .open-vault {
+        color: $tan;
+
+        &:before {
+            background-color: $tan;
+            top: 36px;
+            
+            @media screen and (max-width: $small) {
+                display: none;
+            }
+        }
+        &:hover {
+            color: $light-green;
+
+            &:before {
+                background-color: $light-green;
+            }
+        }
+    }
+    .error-msg {
+        width: 90%;
+        max-width: 85%;
+        margin: 50px auto;
+        font-size: 30px;
+        text-align: center;
+
+        @media screen and (max-width: $small) {
+            font-size: 24px;
+        }
+    }
+    .error-btn {
+        display: inline-block;
+        background-color: $tan;
+        color: red;
+        padding: 20px 30px;
+        margin-top: 30px;
+        transition: .4s ease;
+
+        &:before {
+            display: none;
+        }
+        &:hover {
+            background-color: $gold;
+            color: $white;
+        }
+    }
+    .vault.is-open + .header-container header {
+        background-color: $tan;
+    }
+    .vault {
+        background-color: $tan;
+
+        &__text-behind {
+            color: $red;
+        }
+        &.is-changing {
+            + .header-container {
+                header {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    .vault.is-open + .header-container header .statement-social__header-social:before {
+        background-color: $red;
+    }
+    .vault.is-open + .header-container header .header-social__social-link a:hover {
+        color: $tan;
+    }
+    .vault__inquiry-link:hover {
+        color: $red;
+        mix-blend-mode: normal;
+    }
+    .vault-toggle__vault-text:before {
+        background-color: $black;
+    }
+    .vault-toggle {
+        &:hover {
+            .vault-toggle__vault-text:before {
+                background-color: $black !important;
+            }
+        }
+    }
+    .vault.is-open + .header-container .vault-toggle__vault-text:before {
+        background-color: $tan;
+    }
+    #arrow-cursor {
+        background-image: url('../img/xl-hover-arrow-red.png');
+    }
+    .statement-social__header-social:before {
+        @media screen and (max-width: $small) {
+            background-color: $red;
+        }
+    }
+    .header-social__social-link a {
+        &:hover {
+            @media screen and (max-width: $small) {
+                color: $tan;
+            }
+        }
+    }
+    footer {
+        display: none;
+    }
+}

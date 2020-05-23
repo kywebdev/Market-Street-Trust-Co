@@ -82,8 +82,10 @@ SITE-SPECIFIC PARTIALS
 // layout
 @import "layouts/header";
 @import "layouts/hero";
+@import "layouts/layouts";
 @import "layouts/sections";
 @import "layouts/footer";
+@import "layouts/error";
 
 // components
 @import "components/brand-ledger";

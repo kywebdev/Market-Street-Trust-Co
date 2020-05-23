@@ -1,6 +1,16 @@
 <div class="animatedParent animateOnce">
     <div class="interior-hero animated fadeInDownShort delay-250">
+        {{#unlesspage 'big-hill'}}
+        <img src="assets/img/clients/{{hero-bg}}" alt="{{client-name}} hero image" class="interior-hero__hero-img" style="display: block; height: auto;" />
+        {{/unlesspage}}
+        {{#ifpage 'big-hill'}}
         <img src="assets/img/clients/{{hero-bg}}" alt="{{client-name}} hero image" class="interior-hero__hero-img" />
+        <div class="interior-hero__video">
+            <div class="content">
+                <iframe src="https://player.vimeo.com/video/320580178?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+        {{/ifpage}}
         <div class="interior-hero__hero-text-overlay">
             <p class="interior-hero__hero-text-overlay__label section-label">{{hero-heading}}</p>
             <h1 class="interior-hero__hero-text-overlay__text marquee-container">

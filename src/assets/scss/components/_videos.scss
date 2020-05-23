@@ -8,8 +8,6 @@ iframe {
 }
 .video {
     @include aspect-ratio(16, 9);
-    margin-top: 100px;
-    margin-bottom: 70px;
     z-index: 1;
 
     @media screen and (max-width: $medium) {
@@ -41,19 +39,25 @@ iframe {
 }
 .video-poster {
     position: absolute;
-    top: 0px;
+    top: 5vw;
     left: 0px;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 82%;
     z-index: 2;
     overflow: hidden;
     cursor: none;
 
+    @media screen and (max-width: $medium) {
+        top: 0vw;
+        height: 100%;
+    }
     @media screen and (max-width: $small) {
         height: 350px;
+    }
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        pointer-events: none;
     }
 }
 .video-poster__initials {

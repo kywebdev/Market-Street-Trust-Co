@@ -74,6 +74,15 @@ all-together-slider:
   -
     slide-img: all-together/all-together-slide3.png
     alt-text: Slide 3
+  -
+    slide-img: all-together/all-together-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: all-together/all-together-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: all-together/all-together-slide3.png
+    alt-text: Slide 3
 
 big-hill-branding-slider:
   -
@@ -134,5 +143,246 @@ big-hill-slider:
     slide-img: big-hill/big-hill-slide3.jpg
     alt-text: Slide 3
   -
+    slide-img: big-hill/big-hill-slide1.jpg
+    alt-text: Slide 1
+  -
     slide-img: big-hill/big-hill-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: big-hill/big-hill-slide3.jpg
+    alt-text: Slide 3
+
+drydene-branding-slider:
+  -
+    slide-img: drydene/drydene-branding-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: drydene/drydene-branding-slide1.png
+    alt-text: Slide 2
+  -
+    slide-img: drydene/drydene-branding-slide1.png
+    alt-text: Slide 3
+
+drydene-colors: 
+  -
+    color-name: Red
+    color-hex: c8102e
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: White
+    color-hex: ffffff
+    color-cmyk: c01 m01 y01 k01
+    color-class: color__palette-slider--light
+  -
+    color-name: Gray
+    color-hex: 929a9d
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Black
+    color-hex: 1a1818
+    color-cmyk: c01 m01 y01 k01
+
+drydene-slider:
+  -
+    slide-img: drydene/drydene-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: drydene/drydene-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: drydene/drydene-slide3.png
+    alt-text: Slide 3
+  -
+    slide-img: drydene/drydene-slide4.png
+    alt-text: Slide 4
+
+drydene-nascar-slider:
+  -
+    slide-img: drydene/drydene-nascar-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: drydene/drydene-nascar-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: drydene/drydene-nascar-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: drydene/drydene-nascar-slide2.jpg
+    alt-text: Slide 2
+
+sauders-branding-slider:
+  -
+    slide-img: sauders/sauders-branding-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: sauders/sauders-branding-slide1.png
+    alt-text: Slide 2
+  -
+    slide-img: sauders/sauders-branding-slide1.png
+    alt-text: Slide 3
+
+sauders-colors: 
+  -
+    color-name: Gold
+    color-hex: eab700
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: White
+    color-hex: ffffff
+    color-cmyk: c01 m01 y01 k01
+    color-class: color__palette-slider--light
+  -
+    color-name: Gray
+    color-hex: 434548
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Orange
+    color-hex: e0582a
+    color-cmyk: c01 m01 y01 k01
+
+sauders-slider:
+  -
+    slide-img: sauders/sauders-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: sauders/sauders-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: sauders/sauders-slide3.png
+    alt-text: Slide 3
+
+seagrams-slider:
+  -
+    slide-img: seagrams/seagrams-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: seagrams/seagrams-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: seagrams/seagrams-slide3.png
+    alt-text: Slide 3
+  -
+    slide-img: seagrams/seagrams-slide4.png
+    alt-text: Slide 4
+  -
+    slide-img: seagrams/seagrams-slide5.png
+    alt-text: Slide 5
+  -
+    slide-img: seagrams/seagrams-slide6.png
+    alt-text: Slide 6
+
+seagrams-packaging-slider:
+  -
+    slide-img: seagrams/seagrams-packaging-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: seagrams/seagrams-packaging-slide2.png
+    alt-text: Slide 2
+  -
+    slide-img: seagrams/seagrams-packaging-slide1.png
+    alt-text: Slide 1
+  -
+    slide-img: seagrams/seagrams-packaging-slide2.png
+    alt-text: Slide 2
+
+evergrain-branding-slider:
+  -
+    slide-img: evergrain/evergrain-logo.png
+    alt-text: Slide 1
+  -
+    slide-img: evergrain/evergrain-logo.png
+    alt-text: Slide 2
+  -
+    slide-img: evergrain/evergrain-logo.png
+    alt-text: Slide 3
+
+evergrain-colors: 
+  -
+    color-name: Yellow
+    color-hex: fdd100
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Off-White
+    color-hex: fffefe
+    color-cmyk: c01 m01 y01 k01
+    color-class: color__palette-slider--light
+  -
+    color-name: Turquoise
+    color-hex: 5dc0d3
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Gray
+    color-hex: 53534a
+    color-cmyk: c01 m01 y01 k01
+
+evergrain-slider:
+  -
+    slide-img: evergrain/evergrain-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: evergrain/evergrain-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: evergrain/evergrain-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: evergrain/evergrain-slide2.jpg
+    alt-text: Slide 2
+
+portofino-branding-slider:
+  -
+    slide-img: portofino/portofino-logo.png
+    alt-text: Slide 1
+  -
+    slide-img: portofino/portofino-logo.png
+    alt-text: Slide 2
+  -
+    slide-img: portofino/portofino-logo.png
+    alt-text: Slide 3
+
+portofino-colors: 
+  -
+    color-name: Gold
+    color-hex: 72623c
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: White
+    color-hex: ffffff
+    color-cmyk: c01 m01 y01 k01
+    color-class: color__palette-slider--light
+  -
+    color-name: Black
+    color-hex: 1a1818
+    color-cmyk: c01 m01 y01 k01
+  -
+    color-name: Red
+    color-hex: b2282f
+    color-cmyk: c01 m01 y01 k01
+
+portofino-slider:
+  -
+    slide-img: portofino/portofino-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: portofino/portofino-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: portofino/portofino-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: portofino/portofino-slide2.jpg
+    alt-text: Slide 2
+
+portofino-photo-slider:
+  -
+    slide-img: portofino/portofino-photo-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: portofino/portofino-photo-slide2.jpg
+    alt-text: Slide 2
+  -
+    slide-img: portofino/portofino-photo-slide1.jpg
+    alt-text: Slide 1
+  -
+    slide-img: portofino/portofino-photo-slide2.jpg
     alt-text: Slide 2

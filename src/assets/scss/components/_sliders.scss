@@ -1,4 +1,7 @@
 .slider-container {
+    @media screen and (max-width: $medium) {
+        margin-top: 100px;
+    }
     &.from-left {
         left: 4%;
 
@@ -24,6 +27,10 @@
             top: 50%;
             right: 9%;
             transform: translateY(-50%);
+
+            @media screen and (max-width: $medium) {
+                top: -50px;
+            }
         }
         .slider {
             height: auto;
@@ -45,15 +52,30 @@
                 @media screen and (max-width: $small) {
                     width: 90%;
                 }
+                img {
+                    pointer-events: none;
+                }
             }
         }
     }
     &.from-right {
+        @media screen and (max-width: $medium) {
+            margin-top: 100px;
+        }
         .pull-grab {
             position: absolute;
             top: 50%;
-            left: 9%;
             transform: translateY(-50%);
+
+            @media screen and (max-width: $medium) {
+                top: -50px;
+                left: 10% !important;
+            }
+        }
+        &.pull-grab-offset {
+            .pull-grab {
+                left: 9%;
+            }
         }
         .slider {
             left: 9%;
@@ -70,9 +92,6 @@
         position: relative;
         left: 0%;
 
-        @media screen and (max-width: $medium) {
-            margin-bottom: 50px;
-        }
         .pull-grab {
             right: 0%;
 
@@ -107,6 +126,12 @@
             }
         }
     }
+    &.oversize {
+        .slide {
+            width: 125%;
+            max-width: none;
+        }
+    }
 }
 .slider {
     width: 91%;
@@ -124,6 +149,9 @@
         @media screen and (max-width: $small) {
             width: 85%;
         }
+        img {
+            pointer-events: none;
+        }
     }
 }
 .branding {
@@ -133,7 +161,7 @@
     margin-top: 100px;
 
     @media screen and (max-width: $medium) {
-        padding: 80px 9% 90px 0px;
+        padding: 80px 9% 90px 50px;
         margin-top: 60px;
     }
     @media screen and (max-width: $small) {
@@ -144,17 +172,13 @@
     }
     .cell {
         position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
         @media screen and (max-width: $small) {
             position: relative;
-            top: auto;
-            transform: translate(-50%, 0%);
             display: inline-block;
         }
         &__label {
@@ -199,9 +223,14 @@
         text-align: center;
         overflow: hidden;
         outline: none;
+        width: 100%;
 
         .slide {
             width: 100%;
+
+            img {
+                pointer-events: none;
+            }
         }
     }
 }
@@ -284,6 +313,84 @@
             .color__palette-slider__text__hex {
                 color: #b5b4ac;
             }
+        }
+    }
+}
+.large-image-slider {
+    margin-top: 100px;
+
+    @media screen and (max-width: $medium) {
+        margin-top: 50px !important;
+    }
+    &.left {
+        @media screen and (max-width: $medium) {
+            flex-direction: column-reverse;
+        }
+        .large-image-slider__text {
+            @media screen and (max-width: $medium) {
+                margin-left: 11%;
+            }
+        }
+        .from-left {
+            margin-top: 80px;
+        }
+    }
+    &.right {
+        width: 91%;
+        margin-left: 9%;
+
+        .slider-container {
+            margin-top: 100px;
+        }
+    }
+    &__text {
+        .label-with-heading {
+            left: 9%;
+            margin-top: 50px;
+
+            @media screen and (max-width: $medium) {
+                left: 0%;
+                margin-left: 9%;
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &__slider {
+        .slide {
+            width: 70% !important;
+
+            img {
+                pointer-events: none;
+            }
+        }
+        .slider-container {
+            @media screen and (max-width: $medium) {
+                margin-top: 50px;
+            }
+            &.from-left {
+                .slider {
+                    right: 0%;
+                }
+                .pull-grab {
+                    right: 0%;
+                }
+            }
+            &.from-right {
+                .pull-grab {
+                    left: -7%;
+                }
+                .slider {
+                    left: 11%;
+                }
+            }
+        }
+    }
+    .label-with-heading {
+        left: 0%;
+        margin-left: 0%;
+        
+        @media screen and (max-width: $medium) {
+            margin-top: 0px;
         }
     }
 }

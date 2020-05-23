@@ -27,6 +27,7 @@ header {
     }
     img {
         width: 100%;
+        pointer-events: none;
     }
 }
 .vault-toggle {
@@ -39,7 +40,7 @@ header {
     &:before {
         display: none;
     }
-    &:hover {
+    &.over {
         .burger-line-1 {
             animation: burger-1 .75s;
         }

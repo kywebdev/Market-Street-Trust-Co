@@ -36,7 +36,7 @@
     @media screen and (max-width: $medium) {
         top: -30px;
     }
-    &.over {
+    &.over, &.hover-effect {
         .project-card__card-interior {
             animation: rollover-card-interior 1.5s cubic-bezier(.66,0,.1,1);
             animation-fill-mode: forwards;
@@ -126,6 +126,7 @@
         width: 100%;
         display: block;
         overflow: hidden;
+        pointer-events: none;
     }
     .project-card__card-interior {
         background-color: $red;
@@ -298,6 +299,10 @@
     background-image: url('../img/xl-hover-arrow-white.png');
     z-index: 1000 !important;
     display: none;
+
+    &.hidden {
+        display: none !important;
+    }
 }
 #play-cursor {
     width: 121px;
@@ -307,6 +312,10 @@
     background-image: url('../img/xl-hover-play-white.png');
     z-index: 1000 !important;
     display: none;
+
+    &.hidden {
+        display: none !important;
+    }
 }
 @keyframes rollover-card-interior {
     0% {
@@ -411,7 +420,7 @@
     @media screen and (max-width: $medium) {
         top: 0%;
     }
-    &.over {
+    &.over, &.hover-effect {
         .project-info__project-title {
             span {
                 &:before {
@@ -428,6 +437,7 @@
         width: 100%;
         display: block;
         transition: .6s all ease-out;
+        pointer-events: none;
     }
     .project-card__initials {
         color: $white;
@@ -551,7 +561,7 @@
     @include aspect-ratio(1, 1);
     cursor: none;
 
-    &:hover {
+    &:hover, &.hover-effect {
         .intro-card__honors-awards {
             opacity: 1;
             transform: translate(0px);
