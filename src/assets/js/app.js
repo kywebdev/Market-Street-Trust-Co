@@ -3,6 +3,7 @@ var $ = require('jquery');
 window.jQuery = $;
 window.$ = $;
 import slick from 'slick-carousel';
+import 'smoothscroll-for-websites';
 var jQueryBridget = require('jquery-bridget');
 var Flickity = require('flickity');
 
